@@ -1,0 +1,222 @@
+span.nav-logo {
+    background-image: url(https://i.ibb.co/1LN3zVr/nav-sprite.png);
+    display: inline-block;
+    background-repeat: repeat-x;
+    text-indent: -500px;
+    background-position: -10px -51px;
+    width: 97px;
+    height: 30px;
+}
+
+span.nav-menu {
+    background-image: url(https://i.ibb.co/1LN3zVr/nav-sprite.png);
+    display: inline-block;
+    background-repeat: repeat-x;
+    text-indent: -500px;
+    background-position: -136px -255px;
+    width: 20px;
+    height: 18px;
+    margin-right: 20px;
+}
+
+span.nav-extension {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.search-field {
+    background-color: #febd69;
+    background-image: none;
+    border: none;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -3px;
+}
+
+span.sprite-search {
+    background: url(https://i.ibb.co/1LN3zVr/nav-sprite.png) no-repeat -10px -290px;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin: auto;
+}
+
+span.cartbox {
+    background: url(https://i.ibb.co/1LN3zVr/nav-sprite.png) no-repeat -10px -340px;
+    width: 38px;
+    height: 26px;
+}
+
+.cart {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+span.cartCount {
+    position: absolute;
+    font-weight: 600;
+    color: #f08804;
+    top: -6px;
+    left: 15px;
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+
+span.cartname {
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.sign-in-out p {
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0px 30px;
+}
+
+.navbar-nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+form.form-inline input {
+    width: 700px !important;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+.side-menu.show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    z-index: 1;
+}
+
+.menu-content {
+    width: 365px;
+    background: #e8e8e8;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.side-menu.show .menu-content {
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-content h3 {
+    background: #343a40;
+    color: #fff;
+    padding: 11.3px 25px;
+}
+
+.menu-content ul {
+    list-style: none;
+    padding: 0 25px;
+}
+
+.menu-content ul li {
+    line-height: 2.5;
+}
+
+.close-btn,
+.canvas-bg {
+    opacity: 0;
+}
+
+.show .close-btn {
+    position: fixed;
+    left: 375px;
+    top: 15px;
+    background: url(https://i.ibb.co/1LN3zVr/nav-sprite.png) no-repeat -190px -288px;
+    width: 20px;
+    height: 20px;
+    will-change: opacity;
+    opacity: 1;
+}
+
+.show .canvas-bg {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    will-change: opacity;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: -1;
+    opacity: 1;
+}
+ul.list-items {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 350px;
+    grid-gap: 2rem;
+}
+
+ul.list-items li {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    color: #000;
+}
+
+ul.list-items li img {
+    width: 100%;
+    height: 100%;
+}
+ul.list-items li div p {
+    color: #f08425;
+    font-weight: 500;
+}
+p.product-name {
+    margin: 0px;
+}
+h6.product-brand {
+    margin: 15px 0px 3px;
+}
+
+p.product-price {
+    color: #B12704;
+    font-weight: 500;
+}
+a.logo-extension {
+    display: flex;
+}
+
+a.logo-extension:hover {
+    text-decoration: none;
+}
+.add-cart .add-item-content {
+    border-top: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+    padding: 20px 0px;
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 150px auto 100px;
+}
+
+.add-cart .add-item-content img {
+    width: 120px;
+    height: 150px;
+}
