@@ -1,10 +1,10 @@
-import express from 'express'
-import User from '../modals/user.Modal'
+const express = require('express');
+const UserSchema  = require('../modals/user.Modal');
 const router = express.Router();
 
 router.get('/createadmin', async (req, res) => {
     try {
-        const user = new User({
+        const user = new UserSchema({
             name: 'Sandesh',
             email: 'sansshrestha@gmail.com',
             password: '12345',
@@ -19,4 +19,4 @@ router.get('/createadmin', async (req, res) => {
     
 })
 
-export default router
+module.exports = router
