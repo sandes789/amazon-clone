@@ -1,5 +1,5 @@
 import express from 'express'
-import User from '../modals/user.Modal'
+import User from '../modals/userModal'
 const router = express.Router();
 
 router.get('/createadmin', async (req, res) => {
